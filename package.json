@@ -1,0 +1,28 @@
+{
+    "name": "node-spider-of-weibo",
+    "version": "1.0.0",
+    "description": "A weibo spider which is written by nodejs.",
+    "main": "index.js",
+    "scripts": {
+        "start": "node --harmony-async-await ./index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ruansongsong/node-spider-of-weibo.git"
+    },
+    "keywords": [
+        "spider",
+        "weibo",
+        "nodejs",
+        "node"
+    ],
+    "author": "ruansongsong",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/ruansongsong/node-spider-of-weibo/issues"
+    },
+    "homepage": "https://github.com/ruansongsong/node-spider-of-weibo#readme",
+    "devDependencies": {
+        "request": "^2.74.0"
+    }
+}
