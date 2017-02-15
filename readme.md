@@ -18,17 +18,13 @@ node --harmony-async-await index.js
 ```javascript
 const weiboLogin = require('./lib/weibo_login.js').weiboLogin;
 (async() => {
-	 let logined = new weiboLogin('用户名', '密码').init();
-	 logined.then((result) => {
-		if(result == 1) {
-			/**
-			 * 登录后的操作，例如你可以获取某个微博页面的html,然后再对html进行处理并获取html中的一些数据
-			 * 获取html方法可以参见根目录下的index.js文件中的getHtml()函数
-			 */
-		}
-	 }).catch((error) => {
-		 console.log(error);
-	 })
+    await new weiboLogin('用户名', '密码2').init();
+	/* 以下为你获取html的操作 */
+	// 获取html示例，参见 index.js 中的 getHtml() 函数
+    let result = await getHtml();
+	// 输出
+    console.log(result);
+
 })()
 ```
 
